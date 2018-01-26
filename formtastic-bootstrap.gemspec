@@ -119,13 +119,8 @@ Gem::Specification.new do |s|
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<formtastic-bootstrap>, [">= 0"])
       s.add_runtime_dependency(%q<formtastic>, ["~> 2.2"])
       s.add_development_dependency(%q<rspec>, [">= 0"])
-      s.add_development_dependency(%q<bundler>, [">= 0"])
-      s.add_development_dependency(%q<jeweler>, [">= 0"])
-      s.add_development_dependency(%q<rcov>, [">= 0"])
-      s.add_development_dependency(%q<rspec_tag_matchers>, [">= 0"])
       s.add_development_dependency(%q<ammeter>, [">= 0"])
       s.add_development_dependency(%q<rspec-rails>, ["~> 2.8.0"])
       s.add_development_dependency(%q<bundler>, [">= 0"])
@@ -133,19 +128,10 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<rcov>, [">= 0"])
       s.add_development_dependency(%q<rspec_tag_matchers>, [">= 0"])
     else
-      s.add_dependency(%q<formtastic-bootstrap>, [">= 0"])
       s.add_dependency(%q<formtastic>, ["~> 2.2"])
-      s.add_dependency(%q<rspec>, [">= 0"])
-      s.add_dependency(%q<bundler>, [">= 0"])
-      s.add_dependency(%q<jeweler>, [">= 0"])
-      s.add_dependency(%q<rcov>, [">= 0"])
-      s.add_dependency(%q<rspec_tag_matchers>, [">= 0"])
       s.add_dependency(%q<ammeter>, [">= 0"])
       s.add_dependency(%q<rspec-rails>, ["~> 2.8.0"])
       s.add_dependency(%q<bundler>, [">= 0"])
-      s.add_dependency(%q<jeweler>, [">= 0"])
-      s.add_dependency(%q<rcov>, [">= 0"])
-      s.add_dependency(%q<rspec_tag_matchers>, [">= 0"])
     end
   else
     s.add_dependency(%q<formtastic>, ["~> 2.2"])
